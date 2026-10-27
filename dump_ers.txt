@@ -1,0 +1,296 @@
+=== DOCUMENT: EP1_ISY1102_Estudiante_ERS_B.docx ===
+P[11] (style=Normal): Sistema de exámenes médicos Cuidarte+
+P[12] (style=Normal): Especificación de requerimientos de Software
+P[30] (style=Normal): CreaLab Spa – Departamento de desarrollo
+P[34] (style=Heading 1): Historial de versiones
+P[39] (style=toc 1): Historial de versiones	1
+P[40] (style=toc 1): 1	Introducción	3
+P[41] (style=toc 2): 1.1	Propósito	3
+P[42] (style=toc 2): 1.2	Alcance	3
+P[43] (style=toc 2): 1.3	Definiciones, acrónimos y abreviaturas	3
+P[44] (style=toc 2): 1.4	Resumen	4
+P[45] (style=toc 1): 2	Descripción general	4
+P[46] (style=toc 2): 2.1	Perspectiva del producto	4
+P[47] (style=toc 2): 2.2	Funcionalidad del producto	4
+P[48] (style=toc 2): 2.3	Características de los usuarios	5
+P[49] (style=toc 2): 2.4	Restricciones	5
+P[50] (style=toc 2): 2.5	Suposiciones y dependencias	5
+P[51] (style=toc 1): 3	Requisitos específicos	5
+P[52] (style=toc 2): 3.1	Requisitos comunes de los interfaces	5
+P[53] (style=toc 3): 3.1.1	Interfaces de usuario (Frontend)	5
+P[54] (style=toc 3): 3.1.2	Interfaz de servidor (Backend)	6
+P[55] (style=toc 2): 3.2	Requisitos funcionales	6
+P[56] (style=toc 3): RF-1 Autenticación y sesión	6
+P[57] (style=toc 3): RF-2 Registro de usuarios	6
+P[58] (style=toc 3): RF-3 Gestión de exámenes médicos	8
+P[59] (style=toc 3): RF-4 Visualización de información médica	8
+P[60] (style=toc 3): RF-5 Auditoría	9
+P[61] (style=toc 2): 3.3	Requisitos no funcionales	10
+P[62] (style=toc 3): 3.3.1	Seguridad (NFR-SEG)	10
+P[63] (style=toc 3): 3.3.2	Rendimiento (NFR-PERF)	10
+P[64] (style=toc 3): 3.3.3	Usabilidad y accesibilidad (NFR-USAB)	10
+P[65] (style=toc 3): 3.3.4	Disponibilidad y mantenimiento (NFR-DIS)	10
+P[66] (style=toc 3): 3.3.5	Compatibilidad (NFR-COMPAT)	10
+P[67] (style=toc 2): 3.4	Reglas de negocio (RB)	10
+P[68] (style=toc 2): 4. Arquitectura de la solución	11
+P[69] (style=toc 2): 4.1 Front-end	11
+P[70] (style=toc 2): 4.2 Back-end	11
+P[71] (style=Heading 1): Introducción
+P[72] (style=Heading 2): Propósito
+P[73] (style=Normal indentado 2): Este documento describe los requerimientos funcionales y no funcionales del sistema Cuidarte+, una plataforma web orientada a centros de salud para la gestión de pacientes, exámenes médicos y documentos clínicos. Está dirigido a desarrolladores, testers, analistas de seguridad y stakeholders del proyecto.
+P[74] (style=Heading 2): Alcance
+P[75] (style=Normal indentado 2): Cuidarte+ permitirá a médicos registrar pacientes y exámenes médicos, a pacientes visualizar su información clínica y a administradores supervisar, auditar y administrar usuarios y datos del sistema, adicionalmente se debe garantizar el cumplimiento de normativa de protección de datos y estándares de seguridad. Debe ser accesible desde desktop, tablets y móviles, con especial atención a la usabilidad para adultos mayores.
+P[76] (style=Heading 2): Definiciones, acrónimos y abreviaturas
+P[78] (style=Heading 2): Resumen
+P[79] (style=Normal indentado 2): El documento continúa con una descripción general del producto, lista de requerimientos funcionales y no funcionales, interfaces externas, restricciones, criterios de aceptación y una matriz de trazabilidad con el esquema de BD.
+P[81] (style=Heading 1): Descripción general
+P[82] (style=Heading 2): Perspectiva del producto
+P[83] (style=Normal indentado 2): Cuidarte+ es una aplicación web multicapa: Frontend (React) consume API RESTful (Express) que opera sobre PostgreSQL. El sistema centraliza la gestión de pacientes, exámenes médicos, documentos clínicos y auditoría de acciones.
+P[84] (style=Heading 2): Funcionalidad del producto
+P[85] (style=Normal indentado 2): Autenticación y gestión de sesión
+P[86] (style=Normal indentado 2): Registro de nuevos usuarios
+P[87] (style=Normal indentado 2): Gestión de pacientes (datos personales y médicos)
+P[88] (style=Normal indentado 2): Gestión de exámenes médicos
+P[89] (style=Normal indentado 2): Carga y visualización de documentos médicos
+P[90] (style=Normal indentado 2): Registro de auditoría de acciones de usuarios
+P[91] (style=Normal indentado 2): Interfaz responsiva y accesible
+P[92] (style=Normal indentado 2): Seguridad, control de acceso, cifrado, login seguro, backups.
+P[93] (style=Normal indentado 2): Acceso diferenciado según rol
+P[94] (style=Heading 2): Características de los usuarios
+P[95] (style=Normal indentado 2): Cada usuario debe pertenecer a una o más empresas
+P[98] (style=Heading 2): Restricciones
+P[99] (style=Normal indentado 2): El stack tecnológico debe ser una capa de cliente con React, capa de servidor con Express y base de datos PostgreSQL.
+P[100] (style=Normal indentado 2): Almacenamiento de documentos (PDF u otros) en storage interno con referencia en BD.
+P[101] (style=Normal indentado 2): Soporte para múltiples tamaños de pantalla y dispositivos
+P[102] (style=Normal indentado 2): Política de contraseñas, mínimo configurable (por defecto: 12 caracteres, incluir mayúsculas, minúsculas, número y símbolo.
+P[103] (style=Normal indentado 2): Hashing de contraseñas en backend (bcrypt)
+P[104] (style=Normal indentado 2): Todas las comunicaciones deben usar TLS
+P[105] (style=Normal indentado 2): Los documentos deben estar fuertemente controlados por contener información sensible
+P[107] (style=Heading 2): Suposiciones y dependencias
+P[108] (style=Normal indentado 2): Los usuarios finales disponen de navegador moderno (Chrome, Firefox, Safari, Edge).
+P[109] (style=Normal indentado 2): Integración de correo electrónico para verificación y notificaciones
+P[110] (style=Normal indentado 2): Disponibilidad de almacenamiento suficiente para documentos.
+P[111] (style=Heading 1): Requisitos específicos
+P[112] (style=Heading 2): Requisitos comunes de los interfaces
+P[113] (style=Heading 3): Interfaces de usuario (Frontend)
+P[114] (style=Normal indentado 3): SPA en React, responsiva.
+P[115] (style=Normal indentado 3): Páginas principales: 
+P[116] (style=Normal indentado 3): Login
+P[117] (style=Normal indentado 3): Registro
+P[118] (style=Normal indentado 3): Dashboard según rol
+P[119] (style=Normal indentado 3): Gestión de Usuarios
+P[120] (style=Normal indentado 3): Gestión de Pacientes
+P[121] (style=Normal indentado 3): Gestión de Exámenes médicos
+P[122] (style=Normal indentado 3): Visualización/descarga de documentos
+P[123] (style=Normal indentado 3): Auditoría
+P[124] (style=Normal indentado 3): Accesibilidad, tamaños de fuentes 12px, contraste suficiente, etiquetas ARIA en formularios, navegación por teclado, elementos de UI con tamaño mínimo para pantallas táctiles.
+P[126] (style=Normal indentado 3): Criterios de aceptación: pruebas de usabilidad con usuarios mayores (5 usuarios representativos) no muestran bloqueos mayores y cumplimiento básico de accesibilidad.
+P[127] (style=Heading 3): Interfaz de servidor (Backend)
+P[128] (style=Normal indentado 3): Endpoints RESTful JSON para: auth (login, logout, refresh token), usuarios, pacientes, exámenes, documentos, roles y auditoría.
+P[129] (style=Normal indentado 3): Autenticación basada en JWTs de corta vigencia y refresh token (o sesión segura).
+P[130] (style=Normal indentado 3): Validación de entradas (server-side) para todos los Endpoints.
+P[132] (style=Normal indentado 3): Criterios de aceptación: colección con swagger con test básicos y cobertura de endpoints críticos.
+P[133] (style=Heading 2): Requisitos funcionales
+P[134] (style=Heading 3): RF-1 Autenticación y sesión
+P[137] (style=Normal indentado 3): Criterio de aceptación: Login exitoso genera un token de sesión (JWT); Logout invalida sesión;
+P[138] (style=Heading 3): RF-2 Registro de usuarios
+P[146] (style=Heading 3): RF-3 Gestión de exámenes médicos
+P[150] (style=Normal indentado 3): Criterios de aceptación: Operaciones CRUD funcionan y validan correctamente el ingreso u edición. Se debe realizar una eliminación lógica solicitando al usuario confirmación antes de proceder en la operación.
+P[152] (style=Heading 3): RF-4 Visualización de información médica
+P[157] (style=Normal indentado 3): Criterios de aceptación: La subida y descarga debe considerar un tiempo no mayor a 10 segundos. 
+P[158] (style=Heading 3): RF-5 Auditoría
+P[160] (style=Normal indentado 3): Criterios de aceptación: registros de auditoría generados en cada acción crítica.
+P[161] (style=Heading 2): Requisitos no funcionales
+P[162] (style=Heading 3): Seguridad (NFR-SEG)
+P[163] (style=Normal indentado 3): NFR-SEG-1: TSL obligatorio en todas las comunicaciones
+P[164] (style=Normal indentado 3): NFR-SEG-2: Contraseñas con Hashing seguro (bcrypt)
+P[165] (style=Normal indentado 3): NFR-SEG-3: Encriptación de datos sensibles en reposo
+P[166] (style=Normal indentado 3): NFR-SEG-4: Control de acceso por rol en backend
+P[167] (style=Normal indentado 3): NFR-SEG-5: Protección contra CSRF, XSS, SQL Injection, validación y saneamiento de entrada.
+P[168] (style=Normal indentado 3): NFR-SEG-6: Gestión de log segura
+P[169] (style=Normal indentado 3): NFR-SEG-7: Políticas de respaldo y recuperación definidos
+P[170] (style=Normal indentado 3): NFR-SEG-8: Cumplimiento de normativas de protección de datos personales;
+P[171] (style=Normal indentado 3): NFR-SEG-9: Manejo de sesión mediante token de acceso (JWT).
+P[173] (style=Normal indentado 3): Criterio de aceptación: auditoría de seguridad con checklist y pruebas de penetración sin hallazgos críticos.
+P[174] (style=Heading 3): Rendimiento (NFR-PERF)
+P[175] (style=Normal indentado 3): NFR-PERF-1: Tiempo de respuesta para operaciones CRUD simples < 300 ms bajo carga normal.
+P[176] (style=Normal indentado 3): NFR-PERF-2: Página principal cargue en < 2s en conexión promedio móvil.
+P[177] (style=Normal indentado 3): NFR-PERF-3: Soporta concurrentes estimados (configurable); por defecto 200 usuarios concurrentes.
+P[179] (style=Normal indentado 3): Criterios de aceptación: prueba de carga que cumplan los umbrales.
+P[180] (style=Heading 3): Usabilidad y accesibilidad (NFR-USAB)
+P[181] (style=Normal indentado 3): NFR-USAB-1: Interfaces con tipografía legible, contraste adecuado y controles grandes para usuarios mayores.
+P[182] (style=Normal indentado 3): NFR-USAB-2: Flujos claros para registro, visualización de exámenes o documentos.
+P[183] (style=Normal indentado 3): NFR-USAB-3: Documentación de ayuda contextual y mensajes de errores amigables.
+P[184] (style=Normal indentado 3): NFR-USAB-4: Se debe escalar el flujo de acceso a la información en donde primero se accede al paciente y luego visualizar los exámenes médicos de dicho paciente.
+P[186] (style=Normal indentado 3): Criterios de aceptación: pruebas con usuarios (incluyendo adultos mayores) y score de usabilidad mínimo aceptable.
+P[187] (style=Heading 3): Disponibilidad y mantenimiento (NFR-DIS)
+P[188] (style=Normal indentado 3): NFR-DIS-1: Disponibilidad objetivo 99.5% por mes
+P[189] (style=Normal indentado 3): NFR-DIS-2: Actualizaciones con ventana de mantenimiento y migración de datos segura.
+P[190] (style=Heading 3): Compatibilidad (NFR-COMPAT)
+P[191] (style=Normal indentado 3): NFR-COMPAT-1: Navegadores modernos (últimas 2 versiones de Chrome, Firefox, Safari y Edge).
+P[192] (style=Normal indentado 3): NFR-COMPAT-2: Responsivo para móviles y tablets
+P[193] (style=Heading 2): Reglas de negocio (RB)
+P[194] (style=Normal indentado 2): RB-1: Un paciente solo tiene permisos de lectura
+P[195] (style=Normal indentado 2): RB-2: Un administrador tiene acceso completo a operaciones de escritura, lectura, actualización y eliminación.
+P[196] (style=Normal indentado 2): RB-3: Un médico puede ver la información clínica de cualquier paciente registrado.
+P[197] (style=Heading 2): 4. Arquitectura de la solución
+P[198] (style=Normal indentado 2): El siguiente diagrama despliega conceptualmente como se comunican las capas entre cliente, servidor y almacenamiento junto a la definición de las tecnologías utilizadas.
+P[201] (style=Heading 2): 4.1 Front-end
+P[202] (style=Normal indentado 2): Dependencias utilizadas en el lado del cliente (principales)
+P[207] (style=Heading 2): 4.2 Back-end
+P[208] (style=Normal indentado 2): Dependencias utilizadas en el lado del servidor (principales)
+
+--- TABLE 0 (3x4) ---
+R0: Fecha | Versión | Autor | Descripción
+R1: 01/04/2026 | 1.0 | Sebastián Rojas |  Creación de documento de especificación de Software. 
+R2: 13/04/2026 | 1.1 | Roberto Araya |  Se añaden especificaciones en requerimientos funcionales y no funcionales. 
+
+--- TABLE 1 (26x2) ---
+R0: Concepto | Definición
+R1: Atlas | Nombre de la plataforma web de gestión de clientes, contratos desarrollada por CreaLAB.
+R2: SRS | Software Requirements Specifications
+R3: API | Interfaz de programación de aplicaciones (RESTful JSON)
+R4: RUT | Rol Único Tributario (identificador en Chile)
+R5: AuthN / AuthZ | Autenticación / Autorización
+R6: Admin | Rol con permisos completos sobre datos
+R7: Editor | Rol con permisos de sólo visualización según requerimiento
+R8: DB | Base de datos PostgreSQL
+R9: Frontend | Capa visual del sistema, desarrollada en React, que interactúa con los usuarios finales.
+R10: Backend | Lógica de negocio y API del sistema, desarrollada en Node.js con Express, que interactúa con la base de datos y maneja las reglas del sistema.
+R11: React | Librería de Javascript utilizada para construir interfaces de usuario reactivas y componentes reutilizables.
+R12: Express | Framework minimalista de Node.js utilizado para construir la API REST del backend.
+R13: PostgreSQL | Sistema de gestión de base de datos relacional de código abierto, orientado a alta confiabilidad y cumplimiento ACID.
+R14: TSL (Transport Layer Security) | Protocolo criptográfico que garantiza la privacidad e integridad de los datos en tránsito
+R15: Hashing | Técnica criptográfica para transformar contraseñas o datos sensibles en valores irreversibles (usualmente usando algoritmos como bcrypt o Argon2).
+R16: Bcrypt | Algoritmo de Hashing diseñado para proteger contraseñas mediante sal aleatoria y alto costo computacional.
+R17: Endpoint | Punto de acceso (RUL) expuesto por la API que recibe y responde a solicitudes de los clientes
+R18: JWT (Json web token) | Formato estándar de token usado para autenticar usuarios y transmitir información de forma segura entre cliente y servidor.
+R19: CRUD | Operaciones básicas de persistencia de datos: Create, Read, Update, Delete.
+R20: SPA (Single Page Application) | Aplicación web que carga una sola página HTML y actualiza dinámicamente el contenido sin recargar la página completa, mejorando la experiencia del usuario.
+R21: CSRF (Cross-site Request forgery) | Tipo de ataque que fuerza a un usuario autenticado a ejecutar acciones no deseadas.
+R22: XSS (Cross-site Scripting) | Ataque que inyecta scripts maliciosos en páginas vistas por otros usuarios.
+R23: SQL Injection | Ataque que manipula consultas SQL mediante entrada no validada
+R24: Backup | Copia de seguridad periódica de la base de datos o archivos para prevenir pérdida de información
+R25: Uptime | Porcentaje de tiempo que el sistema está disponible y operativo
+
+--- TABLE 2 (4x2) ---
+R0: Administrador | Administra usuarios, edita cuentas, gestiona exámenes y revisa auditoría
+R1: Médico | Registra y gestiona pacientes y exámenes médicos
+R2: Paciente | Visualiza sus exámenes y documentos asociados
+R3: Usuario anónimo / visitante | Sólo accede al flujo de registro, sin acceso a datos.
+
+--- TABLE 3 (4x2) ---
+R0: Número de requisito | RF-1.1
+R1: Nombre de requisito | El sistema debe permitir a un usuario autenticarse con nombre_usuario y contraseña
+R2: Tipo | Requisito
+R3: Prioridad del requisito | Alta/Esencial
+
+--- TABLE 4 (4x2) ---
+R0: Número de requisito | RF-1.2
+R1: Nombre de requisito | El sistema debe soportar cierre de sesión y revocación de tokens
+R2: Tipo | Requisito
+R3: Prioridad del requisito | Alta/Esencial
+
+--- TABLE 5 (4x2) ---
+R0: Número de requisito | RF-2.1
+R1: Nombre de requisito | Los usuarios deben poder registrarse rápidamente ingresando usuario, contraseña y correo. Al confirmar su registro pueden acceder al sistema como rol “paciente” por defecto.
+R2: Tipo | Requisito
+R3: Prioridad del requisito | Alta/Esencial
+
+--- TABLE 6 (4x2) ---
+R0: Número de requisito | RF-2.2
+R1: Nombre de requisito | Un usuario médico o administrador puede registrar a un paciente para que pueda ingresar exámenes médicos
+R2: Tipo | Requisito
+R3: Prioridad del requisito | Alta/Esencial
+
+--- TABLE 7 (4x2) ---
+R0: Número de requisito | RF-2.3
+R1: Nombre de requisito | Un usuario médico o administrador puede editar el registro de un paciente para actualizar su información
+R2: Tipo | Requisito
+R3: Prioridad del requisito | Alta/Esencial
+
+--- TABLE 8 (4x2) ---
+R0: Número de requisito | RF-2.4
+R1: Nombre de requisito | Un usuario médico o administrador puede visualizar el registro de un paciente
+R2: Tipo | Requisito
+R3: Prioridad del requisito | Alta/Esencial
+
+--- TABLE 9 (4x2) ---
+R0: Número de requisito | RF-2.5
+R1: Nombre de requisito | Un usuario administrador puede visualizar los usuarios registrados en la plataforma para administrar o gestionar
+R2: Tipo | Requisito
+R3: Prioridad del requisito | Alta/Esencial
+
+--- TABLE 10 (4x2) ---
+R0: Número de requisito | RF-2.6
+R1: Nombre de requisito | Un usuario administrador editar un usuario permitiendo adicionalmente establecer distintos roles
+R2: Tipo | Requisito
+R3: Prioridad del requisito | Alta/Esencial
+
+--- TABLE 11 (4x2) ---
+R0: Número de requisito | RF-2.7
+R1: Nombre de requisito | Un usuario administrador puede eliminar un usuario de la plataforma
+R2: Tipo | Requisito
+R3: Prioridad del requisito | Alta/Esencial
+
+--- TABLE 12 (4x2) ---
+R0: Número de requisito | RF-3.1
+R1: Nombre de requisito | Un usuario médico puede registrar un nuevo examen a un paciente para llevar registro de sus antecedentes médicos
+R2: Tipo | Requisito
+R3: Prioridad del requisito | Alta/Esencial
+
+--- TABLE 13 (4x2) ---
+R0: Número de requisito | RF-3.2
+R1: Nombre de requisito | Un usuario médico puede editar tanto los datos del examen como modificar o actualizar los documentos médicos
+R2: Tipo | Requisito
+R3: Prioridad del requisito | Alta/Esencial
+
+--- TABLE 14 (4x2) ---
+R0: Número de requisito | RF-3.3
+R1: Nombre de requisito | Un usuario médico puede eliminar el examen médico o los documentos cargados a él.
+R2: Tipo | Requisito
+R3: Prioridad del requisito | Alta/Esencial
+
+--- TABLE 15 (4x2) ---
+R0: Número de requisito | RF-4.1
+R1: Nombre de requisito | Un usuario paciente puede visualizar sus exámenes médicos para visualizar su registro médico.
+R2: Tipo | Requisito
+R3: Prioridad del requisito | Alta/Esencial
+
+--- TABLE 16 (4x2) ---
+R0: Número de requisito | RF-4.2
+R1: Nombre de requisito | Un usuario paciente puede descargar los documentos de sus exámenes médicos para mantener una copia o respaldo de sus documentos médicos.
+R2: Tipo | Requisito
+R3: Prioridad del requisito | Alta/Esencial
+
+--- TABLE 17 (4x2) ---
+R0: Número de requisito | RF-4.3
+R1: Nombre de requisito | Los usuarios médicos pueden adjuntar un documento por registro de examen médico en formato PDF, DOC, PPT, JPG, PNG.
+R2: Tipo | Requisito
+R3: Prioridad del requisito | Alta/Esencial
+
+--- TABLE 18 (4x2) ---
+R0: Número de requisito | RF-4.4
+R1: Nombre de requisito | Los documentos deben almacenarse en storage interno y ser referenciados en la base de datos
+R2: Tipo | Requisito
+R3: Prioridad del requisito | Alta/Esencial
+
+--- TABLE 19 (4x2) ---
+R0: Número de requisito | RF-5.1
+R1: Nombre de requisito | Registrar en auditoria las acciones críticas: creación, edición, eliminación de clientes, contratos, usuarios, subida o descarga de documentos.
+R2: Tipo | Requisito
+R3: Prioridad del requisito | Alta/Esencial
+
+--- TABLE 20 (5x3) ---
+R0: Componente | Versión | Descripción
+R1: React | v19.1.1 | Biblioteca de Javascript de código abierto utilizado para crear interfaces de usuario interactivas y dinámicas.
+R2: Material UI | v7.3.4 | Framework de componentes de interfaz (Material UI) que provee diseño y componentes accesibles para React.
+R3: Tailwind | v3.4.14 | Framework CSS utilitario que permite crear diseños rápidos y consistentes directamente en el HTML/JSX.
+R4: axios | v1.13.1 | Cliente HTTP para consumir APIs REST, manejar peticiones, respuestas y errores.
+
+--- TABLE 21 (5x3) ---
+R0: Componente | Versión | Descripción
+R1: Express | V4.19.2 | Framework minimalista para construir servidores HTTP y APIs REST. Es la base del backend.
+R2: PG | V8.12.0 | Cliente oficial de PostgreSQL para Node.js; permite conectarse, ejecutar consultas y manejar transacciones.
+R3: Jsonwebtoken | V9.0.2 | Implementa el estándar JWT (JSON Web Token) para autenticación basada en tokens.
+R4: CORS | V2.8.5 | Middleware que habilita CORS (Cross-Origin Resource Sharing) para permitir peticiones desde otros dominios (como el frontend React).

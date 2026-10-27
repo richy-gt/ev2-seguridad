@@ -1,0 +1,102 @@
+=== DOCUMENT: EP3_ISY1102_Estudiante_Formato_Informe.docx ===
+P[7] (style=Normal): TITULO
+Informe de seguridad y calidad 
+en el desarrollo de software
+P[13] (style=Normal): ISY1102 - Seguridad y calidad en el desarrollo de software
+Sección XX
+P[15] (style=Normal): Integrantes
+Nombre Apellido Alumno 1
+Nombre Apellido Alumno 2
+Nombre Apellido Alumno 3
+P[20] (style=Heading 1): INDICE
+P[40] (style=Heading 1): 1. Introducción
+P[41] (style=Normal): Explicar de qué trata el sistema o proyecto y por qué es necesario realizar un plan de pruebas. Dentro de los puntos a desarrollar:
+P[42] (style=List Paragraph): Contexto del software o módulo a evaluar
+P[43] (style=List Paragraph): El propósito del plan, por qué se diseñan las pruebas, qué se busca asegurar
+P[44] (style=List Paragraph): Que contenidos se incluyen en este informe y como se estructura
+P[45] (style=Heading 1): 2. Criterios de calidad
+P[46] (style=Normal): Establece que estándares debe cumplir el software, acorde al negocio, tipo de software o especificaciones detalladas en documento de especificación de requerimientos de software. Dentro de los puntos a desarrollar:
+P[47] (style=List Paragraph): Calidad en cuanto a usabilidad, rendimiento, estabilidad, confiabilidad, mantenibilidad.
+P[48] (style=List Paragraph): Seguridad relacionada a protección de datos, control de acceso, manejo de errores, integridad de la información.
+P[49] (style=List Paragraph): Normativas en cuanto a estándares técnicos, leyes, políticas internas 
+P[50] (style=Heading 1): 3. Plan de pruebas
+P[51] (style=Heading 2): 3.1 Estrategia de pruebas
+P[52] (style=Normal): Explicar cómo se van a ejecutar las pruebas, que enfoque deben tener. Dentro de los puntos a desarrollar:
+P[53] (style=List Paragraph): Enfoque: manual, automatizado o mixto
+P[54] (style=List Paragraph): Etapas del proceso
+P[55] (style=List Paragraph): Herramientas que se podrían utilizar
+P[56] (style=List Paragraph): Priorización de pruebas
+P[57] (style=List Paragraph): Criterios de entrada y salida
+P[58] (style=Heading 2): 3.2 Tipos de prueba
+P[59] (style=Normal): Identificar qué tipos de prueba se realizarán y por qué son necesarios. Dentro de los puntos a desarrollar:
+P[60] (style=List Paragraph): Pruebas funcionales
+P[61] (style=List Paragraph): Pruebas no funcionales
+P[62] (style=List Paragraph): Pruebas de seguridad
+P[63] (style=List Paragraph): Pruebas de integración
+P[64] (style=List Paragraph): Pruebas de usabilidad
+P[65] (style=List Paragraph): Pruebas de rendimiento, etc.
+P[66] (style=Heading 2): 3.3 Criterios de aceptación
+P[67] (style=Normal): Establece que criterios de aceptación tanto de aspecto funcional, no funcional, reglas de negocio son necesarios a nivel transversal para los casos de prueba para ser considerados como aprobados o aceptados.
+P[68] (style=Heading 2): 3.4 Herramientas utilizadas
+P[69] (style=Normal): Detalla las herramientas tecnológicas utilizadas en las pruebas detallando el fundamento de porque se utilizan y son necesarias para la ejecución. Ciertas herramientas utilizadas pueden ser usadas para tipos de prueba específicas. 
+P[70] (style=Normal): Describir los recursos que se requieren para la ejecución de las pruebas. Dentro de los puntos a desarrollar:
+P[71] (style=List Paragraph): Recursos humanos (roles involucrados)
+P[72] (style=List Paragraph): Recursos técnicos (software, herramientas, equipos, navegadores, versiones, etc.)
+P[73] (style=List Paragraph): Entorno de prueba (ambiente de desarrollo, ambiente QA, etc.)
+P[74] (style=Heading 1): 4. Diseño de casos de prueba
+P[77] (style=Heading 1): 5. Ejecución de pruebas
+P[78] (style=Heading 2): 5.1 Resumen de ejecución
+P[79] (style=Normal): Presentar una visión general del avance y resultado detallando:
+P[80] (style=List Paragraph): Cantidad total de casos de prueba diseñados
+P[81] (style=List Paragraph): Cantidad de casos ejecutados
+P[82] (style=List Paragraph): Resultados obtenidos, cuantos casos pasaron, fallaron, quedaron bloqueados o sin ejecutar
+P[83] (style=Heading 2): 5.2 Detalle de ejecución de casos
+P[84] (style=Normal): Detallar la ejecución caso a caso registrando los resultados específicos de cada prueba:
+P[85] (style=List Paragraph): ID del caso de prueba
+P[86] (style=List Paragraph): Resultado de ejecución
+P[87] (style=List Paragraph): Evidencia
+P[88] (style=List Paragraph): Incidente reportado (en el caso de haber fallado)
+P[89] (style=List Paragraph): Fecha y persona que ejecuta la prueba
+P[91] (style=Heading 2): 5.3 Criticidad de incidentes
+P[92] (style=Normal): Establecer escala de medición acorde al caso o negocio para determinar los niveles, descripciones, impacto o evidencia requerida. A modo de ejemplo se detalla la siguiente tabla:
+P[94] (style=Normal): Para cada incidente identificado se determina el nivel de impacto que tiene en el sistema
+
+--- TABLE 0 (14x3) ---
+R0: ID | NOMBRE | REQUERIMIENTO
+R1: CP-01 | Nombre del caso | EJ REQ-FUNC-01
+R2: DESCRIPCIÓN | DESCRIPCIÓN | DESCRIPCIÓN
+R3: Breve descripción del objetivo del caso de prueba | Breve descripción del objetivo del caso de prueba | Breve descripción del objetivo del caso de prueba
+R4: PRECONDICIONES | PRECONDICIONES | PRECONDICIONES
+R5: Condiciones que deben cumplirse antes de efectuar los pasos del caso de prueba | Condiciones que deben cumplirse antes de efectuar los pasos del caso de prueba | Condiciones que deben cumplirse antes de efectuar los pasos del caso de prueba
+R6: PASOS | PASOS | PASOS
+R7: Describe los pasos que se deben efectuar para reproducir el caso de prueba | Describe los pasos que se deben efectuar para reproducir el caso de prueba | Describe los pasos que se deben efectuar para reproducir el caso de prueba
+R8: RESULTADO ESPERADO | RESULTADO ESPERADO | RESULTADO ESPERADO
+R9: Lo que el sistema debe hacer si el requerimiento está correctamente implementado | Lo que el sistema debe hacer si el requerimiento está correctamente implementado | Lo que el sistema debe hacer si el requerimiento está correctamente implementado
+R10: CRITERIO DE ACEPTACIÓN | CRITERIO DE ACEPTACIÓN | CRITERIO DE ACEPTACIÓN
+R11: Condiciones que deben cumplirse para considerar que la prueba fue exitosa | Condiciones que deben cumplirse para considerar que la prueba fue exitosa | Condiciones que deben cumplirse para considerar que la prueba fue exitosa
+R12: DATOS DE PRUEBA | DATOS DE PRUEBA | DATOS DE PRUEBA
+R13: Los valores específicos con los que se ejecutará la prueba | Los valores específicos con los que se ejecutará la prueba | Los valores específicos con los que se ejecutará la prueba
+
+--- TABLE 1 (6x4) ---
+R0: CASO | DESCRIPCIÓN | RESULTADO | EVIDENCIA
+R1: TIPO DE PRUEBA  | TIPO DE PRUEBA  | TIPO DE PRUEBA  | TIPO DE PRUEBA 
+R2: CP-01 | Nombre de la prueba |  | 
+R3:  |  |  | 
+R4:  |  |  | 
+R5: CP-XX |  |  | 
+
+--- TABLE 2 (5x4) ---
+R0: CASO | DESCRIPCIÓN | IMPACTO | EVIDENCIA
+R1: CRITICO | El defecto impide completamente el funcionamiento del sistema o de una funcionalidad esencial para el negocio. Bloquea el flujo principal. | Muy alto, el sistema no puede ser usado | Requiere remediación inmediata
+R2: GRAVE | El defecto afecta funcionalidades importantes, pero el sistema aún funciona parcialmente. Existe un workaround pero la experiencia se ve comprometida. | Alto, afecta reas principales del usuario | Debe corregirse con urgencia
+R3: MODERADO | El defecto afecta funcionalidades secundarias o casos específicos sin detener el flujo principal | Medio, el usuario puede trabajar, pero con molestias o limitaciones | Se corrige en próxima iteración
+R4: LEVE | Defecto de apariencia, estética o texto el cual no afecta la funcionalidad. | Bajo, no impacta la operación | Se corrige según disponibilidad
+
+--- TABLE 3 (7x4) ---
+R0: CASO | DESCRIPCIÓN | RESULTADO | IMPACTO
+R1: TIPO DE PRUEBA | TIPO DE PRUEBA | TIPO DE PRUEBA | TIPO DE PRUEBA
+R2: CP-XX | Nombre de la prueba |  | CRITICO
+R3:  |  |  | LEVE
+R4: PRUEBAS NO FUNCIONALES | PRUEBAS NO FUNCIONALES | PRUEBAS NO FUNCIONALES | PRUEBAS NO FUNCIONALES
+R5: SEG-XX |  |  | GRAVE
+R6:  |  |  | MODERADO

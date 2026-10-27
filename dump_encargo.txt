@@ -1,0 +1,85 @@
+=== DOCUMENT: EP3_ISY1102_Estudiante Encargo.docx ===
+P[6] (style=Heading 1): Evaluación Parcial Nº 3
+P[8] (style=Normal): Instrucciones y pauta de evaluación | Estudiante
+P[27] (style=Heading 2): Evaluación Parcial Nº3
+P[28] (style=Heading 4): Verificando la calidad, seguridad y cumplimiento normativo Instrucciones y pauta de evaluación
+P[29] (style=Normal): Estudiante
+P[30] (style=Heading 3): Instrucciones generales
+P[36] (style=List Paragraph): El tiempo asignado para desarrollar esta evaluación es de 10 minutos de defensa del trabajo efectuado, más 5 minutos para responder preguntas.
+P[37] (style=List Paragraph): La presentación se organizará al azar, por lo que todos los grupos deben estar preparados desde el inicio del período de evaluación.
+P[38] (style=List Paragraph): Cada grupo deberá enviar mediante AVA el encargo y el material de apoyo utilizado para defender su encargo.
+P[39] (style=List Paragraph): Aunque el proyecto se trabaja de forma grupal, la defensa es individual. Cada estudiante será evaluado de forma personal, en base a su desempeño, claridad y dominio del proyecto. La nota dependerá exclusivamente de lo que cada uno demuestre en la presentación, por lo que es fundamental conocer a fondo todos los aspectos del desarrollo.
+P[40] (style=List Paragraph): Si durante la defensa un/a estudiante no puede explicar con claridad el proyecto, se asumirá que no participó activamente en su desarrollo.
+P[42] (style=Heading 5): Instrucciones específicas de la Evaluación:
+P[44] (style=Heading 6): Consideraciones para el encargo:
+P[45] (style=Body Text): El informe debe incluir los siguientes apartados:
+P[46] (style=List Paragraph): Puntos abordados en la primera evaluación parcial con ajustes basados en retroalimentación y feedback entregado por el docente.
+P[47] (style=List Paragraph): Casos de prueba con una cobertura del 100% de los requerimientos del documento de especificación de requerimientos de software (ERS) cubriendo necesidades, normativas, legales y seguridad del software.
+P[48] (style=List Paragraph): Criterios de calidad, seguridad y cumplimiento normativo a satisfacer en el caso.
+P[49] (style=List Paragraph): Plan de pruebas
+P[50] (style=List Paragraph): Estrategia de pruebas
+P[51] (style=List Paragraph): Tipos de prueba y su justificación
+P[52] (style=List Paragraph): Criterios de aceptación
+P[53] (style=List Paragraph): Herramientas utilizadas
+P[56] (style=List Paragraph): Diseño de casos de prueba (al menos 5 casos de prueba representativos para los distintos tipos requerimientos definidos en el ERS). Cada caso de prueba debe detallar:
+P[57] (style=List Paragraph): ID del caso.
+P[58] (style=List Paragraph): Descripción.
+P[59] (style=List Paragraph): Requerimiento asociado (definido con código en ERS).
+P[60] (style=List Paragraph): Datos de entrada (solo si aplica).
+P[61] (style=List Paragraph): Resultado esperado.
+P[62] (style=List Paragraph): Criterios de aceptación.
+P[63] (style=List Paragraph): Tipo de prueba.
+P[64] (style=List Paragraph): Ejecución de pruebas
+P[65] (style=List Paragraph): Resumen de ejecución
+P[66] (style=List Paragraph): Detalle de ejecución de casos de prueba
+P[67] (style=List Paragraph): Incidentes identificados y su criticidad
+P[68] (style=List Paragraph): Análisis ético y normativo de los resultados obtenidos.
+P[70] (style=Body Text): Los aspectos formales son:
+P[71] (style=Heading 6): Formato: el encargo debe presentarse en formato Word o PDF.
+P[72] (style=List Paragraph): Medio de entrega: Subir el informe a la plataforma AVA en el plazo de entrega correspondiente al día de la evaluación.
+P[73] (style=Heading 6): Formato:
+P[74] (style=List Paragraph): Títulos fuente Arial 12.
+P[75] (style=List Paragraph): Cuerpo Arial 11.
+P[76] (style=List Paragraph): interlineado 1,5.
+P[77] (style=List Paragraph): Texto justificado.
+P[78] (style=List Paragraph): Portada con nombre completo de cada integrante, carrera, sección, docente y fecha.
+P[79] (style=List Paragraph): Redacción en lenguaje formal técnico.
+P[80] (style=List Paragraph): Las capturas de pantalla a modo de evidencia deben tener una buena calidad y legibilidad.
+P[82] (style=Normal): Los materiales, herramientas o insumos que se requieren para realizar esta evaluación:
+P[83] (style=List Paragraph): Documento de especificación de requerimientos de software del caso semestral entregado por el docente.
+P[87] (style=Heading 4): Pauta de Evaluación
+
+--- TABLE 0 (2x4) ---
+R0: Sigla | Nombre Asignatura | Tiempo Asignado | % Ponderación
+R1: ISY1102 | Seguridad y Calidad en el Desarrollo de Software | 1 hora pedagógica | 12%
+
+--- TABLE 1 (2x1) ---
+R0: Descripción
+R1: La Evaluación Parcial 2 corresponde a un encargo con presentación, en el cual las/los estudiantes tendrán acceso al software desarrollado para el caso semestral en donde deberán profundizar en la evaluación técnica de la calidad y seguridad del software, aplicando herramientas de análisis estático, revisión manual y auditoría técnica para identificar vulnerabilidades, desviaciones y brechas de cumplimiento legal y normativo. Esta evaluación medirá los siguientes Indicadores de Logro: IL 2.1 Diseña estrategias de prueba considerando la seguridad y el cumplimiento normativo como componentes esenciales del aseguramiento de la calidad del software. IL 2.2 Diseña casos de prueba que permitan verificar los estándares de calidad, seguridad, marcos legales y regulatorias. IL 2.3 Aplica herramientas de análisis estático para auditar el código fuente, identificando deficiencias de calidad y vulnerabilidades conforme a criterios legales y normativos. IL 2.4 Ejecuta ciclos de prueba documentando hallazgos y vulnerabilidades de forma estructurada, utilizando estándares reconocidos de la industria. IL 2.5 Elabora informes técnicos que integren evidencias, hallazgos y recomendaciones, fundamentados en principios éticos, normativos y de mejora continua. La distribución de los porcentajes en esta evaluación es la siguiente:
+
+--- TABLE 2 (3x4) ---
+R0: Evaluación | Tipo de situación evaluativa | Distribución de porcentajes | Individual/Grupal
+R1: Evaluación Parcial Nº3 (12%) | Encargo | 100% | Grupal
+R2: Total | Total | 100% | 
+
+--- TABLE 3 (6x3) ---
+R0: Categoría | % logro | Descripción niveles de logro
+R1: Muy buen desempeño | 100% | Demuestra un desempeño destacado, evidenciando el logro de todos los aspectos evaluados en el indicador.
+R2: Buen desempeño | 80% | Demuestra un alto desempeño del indicador, presentando pequeñas omisiones, dificultades y/o errores.
+R3: Desempeño aceptable | 60% | Demuestra un desempeño competente, evidenciando el logro de los elementos básicos del indicador, pero con omisiones, dificultades o errores.
+R4: Desempeño incipiente | 30% | Presenta importantes omisiones, dificultades o errores en el desempeño, que no permiten evidenciar los elementos básicos del logro del indicador, por lo que no puede ser considerado competente.
+R5: Desempeño no logrado | 0% | Presenta ausencia o incorrecto desempeño.
+
+--- TABLE 4 (4x7) ---
+R0:  Indicador de Evaluación | Categorías de Respuesta | Categorías de Respuesta | Categorías de Respuesta | Categorías de Respuesta | Categorías de Respuesta | Ponderación Indicador de Evaluación
+R1:  Indicador de Evaluación | Muy buen desempeño 100% | Buen desempeño 80% | Desempeño aceptable 60% | Desempeño incipiente 30% | Desempeño no logrado 0% | Ponderación Indicador de Evaluación
+R2: Dimensión: Encargo | Dimensión: Encargo | Dimensión: Encargo | Dimensión: Encargo | Dimensión: Encargo | Dimensión: Encargo | Dimensión: Encargo
+R3: IE1. Identifica la importancia de la calidad, la seguridad y el cumplimiento legal en el desarrollo de software. | Identifica con claridad y profundidad la importancia de la calidad, seguridad y cumplimiento legal, integrando ejemplos | Identifica correctamente los conceptos principales, con leves omisiones o ejemplos limitados. | Menciona de forma general los conceptos, sin análisis ni ejemplos. | Presenta confusión o errores conceptuales sobre la relación entre calidad, seguridad y legalidad. | No aborda los conceptos de calidad, seguridad o cumplimiento legal. |   20%
+
+--- TABLE 5 (6x7) ---
+R0:  | pertinentes y lenguaje técnico adecuado. |  |  |  |  | 
+R1:  IE3. Clasifica tipos de pruebas y su propósito en el aseguramiento de la calidad. | Clasifica y describe correctamente todos los tipos de prueba (funcionales, no funcionales, seguridad, rendimiento, etc.), justificando su propósito y aplicación. | Clasifica y describe la mayoría de los tipos de prueba, con leves omisiones o justificación superficial. |  Clasifica algunos tipos de prueba, sin justificar adecuadamente su propósito. |  Presenta errores o confusión en la clasificación y propósito de las pruebas. |   No clasifica ni describe los tipos de prueba. |    38%
+R2: IE5. Relaciona los distintos tipos de pruebas no funcionales con su propósito y contexto de aplicación. | Diseña y documenta casos representativos de distintos tipos de pruebas no funcionales, definiendo criterios de aceptación y propósito de manera coherente con el contexto. | Incluye la mayoría de los tipos de pruebas no funcionales con justificación parcial o escasa profundidad. | Diseña casos básicos de pruebas no funcionales, sin detallar su propósito o contexto de uso. |  Diseña casos incompletos o con errores significativos en su aplicación. |  No diseña ni relaciona casos de pruebas no funcionales. |    15%
+R3:  IE7. Reconoce los elementos que componen un plan de pruebas y su vinculación con los requerimientos y normativas. | El plan presenta todos los apartados solicitados (introducción, alcance, objetivos, estrategia, recursos y cronograma) con coherencia técnica, vinculación a requerimientos y normativas vigentes. |  El plan incluye la mayoría de los apartados, con leves omisiones o vínculos poco detallados. |  El plan aborda los elementos básicos, pero sin justificar su relación con los requerimientos o normas. |   El plan está incompleto o con escasa coherencia entre los elementos. |   No presenta plan o este no cumple con los elementos solicitados. |     15%
+R4: IE9. Analiza la cobertura, pertinencia y coherencia del plan de pruebas frente a estándares técnicos y legales. | Evalúa la coherencia y cobertura del plan de pruebas con respecto a los requerimientos y estándares, demostrando análisis crítico y justificación técnica. |  Evidencia buena coherencia general con leves omisiones o análisis superficial. | Analiza parcialmente la cobertura o coherencia del plan, sin detallar relación con estándares. |  Presenta análisis confuso o con errores conceptuales. |  No analiza la cobertura ni la coherencia del plan. |    12%
+R5: Total | Total | Total | Total | Total | Total | 100%
